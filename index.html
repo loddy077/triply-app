@@ -1,28 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Triply Travel Planner</title>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triply Travel Planner</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #222;
+    }
 
+    .hero {
+      background: linear-gradient(135deg, #2d6cdf, #5aa9ff);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 15px auto 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #2d6cdf;
+    }
+
+    .button {
+      display: inline-block;
+      background: #2d6cdf;
+      color: white;
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #1f57b8;
+    }
+
+    .features p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+
+    .screenshots {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .screenshots img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #666;
+      font-size: 0.95rem;
+    }
+
+    .small-text {
+      color: #555;
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+  </style>
+</head>
 <body>
 
-<h1>Triply Travel Planner</h1>
+  <section class="hero">
+    <h1>Triply Travel Planner</h1>
+    <p>
+      Triply is an Android mobile application that helps users plan vacations,
+      organize excursions, manage travel details, and validate trip dates in one place.
+    </p>
+  </section>
 
-<p>
-Triply is an Android application that allows users to manage vacations and excursions.
-Users can create vacation plans, add excursions, validate travel dates, and organize
-trip details in a mobile interface.
-</p>
+  <div class="container">
 
-<h2>Download the App</h2>
+    <div class="card">
+      <h2>Download the App</h2>
+      <p class="small-text">
+        Click the button below to download the Triply APK file.
+      </p>
+      <a class="button" href="https://github.com/loddy077/triply-app/blob/main/app-debug.apk">
+        Download Triply APK
+      </a>
+    </div>
 
-<p>
-<a href="https://github.com/loddy077/triply-app/blob/main/app-debug.apk">Download Triply APK</a>
-</p>
+    <div class="card features">
+      <h2>Features</h2>
+      <p>Triply allows users to create, update, and delete vacation records.</p>
+      <p>Users can add excursions to each vacation and organize travel details clearly.</p>
+      <p>The application validates excursion dates so they stay within the vacation date range.</p>
+      <p>Triply includes a user-friendly interface designed for simple travel management.</p>
+      <p>The app was developed as part of a software development capstone project.</p>
+    </div>
 
-<p>
-This application was developed as part of a software development capstone project.
-</p>
+    <div class="card">
+      <h2>Application Screenshots</h2>
+      <p class="small-text">
+        Upload your app screenshots into the same GitHub repository, then update the image file names below.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Project Information</h2>
+      <p class="small-text">
+        This site was created to host the Triply Android application and provide access
+        to the downloadable APK for demonstration and evaluation purposes.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 Triply Travel Planner
+  </div>
 
 </body>
 </html>
